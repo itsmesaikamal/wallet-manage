@@ -50,6 +50,15 @@
           "System.Threading.Thread": "4.0.0"
         }
       },
+      "iTextSharp": {
+        "type": "Direct",
+        "requested": "[5.5.13.5, )",
+        "resolved": "5.5.13.5",
+        "contentHash": "+HPUqG1zZoMhzj6g6c/9fNViiUXi6/TZ4LiN4fZjg1rGWFFu4ZYKOY+YkhdkIL63DkaN75zR1hSGydBR2LgHzQ==",
+        "dependencies": {
+          "BouncyCastle.Cryptography": "2.6.2"
+        }
+      },
       "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
         "type": "Direct",
         "requested": "[8.0.10, )",
@@ -2881,7 +2890,8 @@
           "StackExchange.Redis": "[2.5.61, )",
           "System.Drawing.Common": "[10.0.3, )",
           "System.IdentityModel.Tokens.Jwt": "[8.16.0, )",
-          "VaultSharp": "[1.17.5.1, )"
+          "VaultSharp": "[1.17.5.1, )",
+          "iTextSharp": "[5.5.13.5, )"
         }
       }
     }
