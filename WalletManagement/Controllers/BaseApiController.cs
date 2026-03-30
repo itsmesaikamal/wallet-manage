@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WalletManagement.Core.Domain.Services.Communication;
-
+using Microsoft.AspNetCore.Authorization;
 namespace WalletManagement.Controllers
 {
     [ApiController]
@@ -14,6 +14,7 @@ namespace WalletManagement.Controllers
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status415UnsupportedMediaType)]
     [ProducesResponseType(typeof(ValidationProblemDetails), StatusCodes.Status422UnprocessableEntity)]
     [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status500InternalServerError)]
+    [AllowAnonymous]
     public class BaseApiController : ControllerBase
     {
     }
